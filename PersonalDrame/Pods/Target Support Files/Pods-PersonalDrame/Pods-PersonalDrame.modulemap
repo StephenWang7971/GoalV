@@ -1,0 +1,6 @@
+framework module Pods_PersonalDrame {
+  umbrella header "Pods-PersonalDrame-umbrella.h"
+
+  export *
+  module * { export * }
+}
