@@ -25,7 +25,6 @@ class BaseTabbarController: UITabBarController {
     {
         addChildViewController(MainViewController(), title: "主页", imageName: "home", selectedImageName: "home_red")
         addChildViewController(GoalViewController(), title: "目标", imageName: "target", selectedImageName: "target_red")
-        addChildViewController(FindViewController(), title: "发现", imageName: "discover", selectedImageName: "discover_")
         addChildViewController(MyViewController(), title: "我的", imageName: "mine", selectedImageName: "mine_red")
 
     }

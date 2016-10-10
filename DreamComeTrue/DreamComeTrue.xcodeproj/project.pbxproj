@@ -19,7 +19,6 @@
 		A022914C1DAA489300FB9D20 /* DreamComeTrueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A022914B1DAA489300FB9D20 /* DreamComeTrueTests.swift */; };
 		A02291571DAA489300FB9D20 /* DreamComeTrueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02291561DAA489300FB9D20 /* DreamComeTrueUITests.swift */; };
 		A02291811DAA49F500FB9D20 /* GoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A022917E1DAA49F500FB9D20 /* GoalViewController.swift */; };
-		A02291871DAA49FD00FB9D20 /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02291861DAA49FD00FB9D20 /* FindViewController.swift */; };
 		A022918D1DAA4A0600FB9D20 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A022918A1DAA4A0600FB9D20 /* MyViewController.swift */; };
 		A02291921DAA4A0E00FB9D20 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02291901DAA4A0E00FB9D20 /* BaseNavigationController.swift */; };
 		A02291931DAA4A0E00FB9D20 /* BaseTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02291911DAA4A0E00FB9D20 /* BaseTabbarController.swift */; };
@@ -66,7 +65,6 @@
 		A02291561DAA489300FB9D20 /* DreamComeTrueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamComeTrueUITests.swift; sourceTree = "<group>"; };
 		A02291581DAA489300FB9D20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A022917E1DAA49F500FB9D20 /* GoalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalViewController.swift; sourceTree = "<group>"; };
-		A02291861DAA49FD00FB9D20 /* FindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
 		A022918A1DAA4A0600FB9D20 /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		A02291901DAA4A0E00FB9D20 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		A02291911DAA4A0E00FB9D20 /* BaseTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabbarController.swift; sourceTree = "<group>"; };
@@ -136,7 +134,6 @@
 			children = (
 				A022918E1DAA4A0E00FB9D20 /* Nav+Tab */,
 				A02291881DAA4A0600FB9D20 /* My */,
-				A02291821DAA49FD00FB9D20 /* Find */,
 				A022917C1DAA49F500FB9D20 /* Goal */,
 				A02291761DAA49E700FB9D20 /* Home */,
 				A02291331DAA489200FB9D20 /* AppDelegate.swift */,
@@ -229,38 +226,6 @@
 		A02291801DAA49F500FB9D20 /* View */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		A02291821DAA49FD00FB9D20 /* Find */ = {
-			isa = PBXGroup;
-			children = (
-				A02291831DAA49FD00FB9D20 /* Controller */,
-				A02291841DAA49FD00FB9D20 /* Model */,
-				A02291851DAA49FD00FB9D20 /* View */,
-			);
-			path = Find;
-			sourceTree = "<group>";
-		};
-		A02291831DAA49FD00FB9D20 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		A02291841DAA49FD00FB9D20 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		A02291851DAA49FD00FB9D20 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				A02291861DAA49FD00FB9D20 /* FindViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -519,7 +484,6 @@
 				A02291931DAA4A0E00FB9D20 /* BaseTabbarController.swift in Sources */,
 				5C34E2E91DAB2D270031130E /* MainViewController.swift in Sources */,
 				A022913C1DAA489300FB9D20 /* DreamComeTrue.xcdatamodeld in Sources */,
-				A02291871DAA49FD00FB9D20 /* FindViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
