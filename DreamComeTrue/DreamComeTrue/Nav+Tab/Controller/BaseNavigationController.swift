@@ -16,14 +16,15 @@ class BaseNavigationController: UINavigationController
     {
         super.initialize()
         let navBar = UINavigationBar.appearance()
-        //navBar.barTintColor = UIColor.white
+        navBar.tintColor = UIColor.white
         navBar.barTintColor = UIColor(red: 218/255.0, green: 0/255.0, blue: 5/255.0, alpha: 1)
         navBar.titleTextAttributes = [NSFontAttributeName: UIFont.systemFont(ofSize: 17)]
+        
     }
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
         if viewControllers.count > 0 {
-            viewController.hidesBottomBarWhenPushed = true
-            //viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "lefterbackicon_titlebar_28x28_"), style: .plain, target: self, action: #selector(navigationBack))
+//            viewController.hidesBottomBarWhenPushed = true
+//            viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "add"), style: .plain, target: self, action: #selector(navigationBack))
         }
         super.pushViewController(viewController, animated: true)
     }
