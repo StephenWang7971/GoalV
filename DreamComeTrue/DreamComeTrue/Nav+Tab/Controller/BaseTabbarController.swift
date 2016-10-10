@@ -19,22 +19,24 @@ class BaseTabbarController: UITabBarController {
     override class func initialize() {
         let tabBar = UITabBar.appearance()
         tabBar.tintColor = UIColor.red
+        tabBar.barTintColor = UIColor(red: 223/255.0, green: 224/255.0, blue: 225/255.0, alpha: 1)
     }
     fileprivate func addChildViewControllers()
     {
-        addChildViewController(MainViewController(), title: "主页" )
-        addChildViewController(GoalViewController(), title: "目标")
-        addChildViewController(FindViewController(), title: "发现")
-        addChildViewController(MyViewController(), title: "我的")
+        addChildViewController(MainViewController(), title: "主页", imageName: "home", selectedImageName: "home_red")
+        addChildViewController(GoalViewController(), title: "目标", imageName: "target", selectedImageName: "target_red")
+        addChildViewController(FindViewController(), title: "发现", imageName: "discover", selectedImageName: "discover_")
+        addChildViewController(MyViewController(), title: "我的", imageName: "mine", selectedImageName: "mine_red")
+
     }
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-        func addChildViewController(_ childController: UIViewController, title: String) {
-            //childController.tabBarItem.image = UIImage(named: imageName)
-            //childController.tabBarItem.selectedImage = UIImage(named: selectedImageName)
+        func addChildViewController(_ childController: UIViewController, title: String, imageName: String, selectedImageName: String) {
+            childController.tabBarItem.image = UIImage(named: imageName)
+            childController.tabBarItem.selectedImage = UIImage(named: selectedImageName)
             childController.title = title
             let nav = BaseNavigationController(rootViewController: childController)
             addChildViewController(nav)

@@ -11,12 +11,13 @@ import UIKit
 
 class BaseNavigationController: UINavigationController
 {
+
     override class func initialize()
     {
         super.initialize()
         let navBar = UINavigationBar.appearance()
-        navBar.barTintColor = UIColor.white
-        navBar.tintColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.7)
+        //navBar.barTintColor = UIColor.white
+        navBar.barTintColor = UIColor(red: 218/255.0, green: 0/255.0, blue: 5/255.0, alpha: 1)
         navBar.titleTextAttributes = [NSFontAttributeName: UIFont.systemFont(ofSize: 17)]
     }
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
