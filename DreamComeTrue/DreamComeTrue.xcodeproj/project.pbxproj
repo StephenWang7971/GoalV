@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C34E2E91DAB2D270031130E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C34E2E71DAB2D270031130E /* MainViewController.swift */; };
+		5C34E2EA1DAB2D270031130E /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C34E2E81DAB2D270031130E /* MainViewController.xib */; };
 		A02291341DAA489200FB9D20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02291331DAA489200FB9D20 /* AppDelegate.swift */; };
 		A02291361DAA489200FB9D20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02291351DAA489200FB9D20 /* ViewController.swift */; };
 		A02291391DAA489200FB9D20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A02291371DAA489200FB9D20 /* Main.storyboard */; };
@@ -15,7 +17,6 @@
 		A02291411DAA489300FB9D20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A022913F1DAA489300FB9D20 /* LaunchScreen.storyboard */; };
 		A022914C1DAA489300FB9D20 /* DreamComeTrueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A022914B1DAA489300FB9D20 /* DreamComeTrueTests.swift */; };
 		A02291571DAA489300FB9D20 /* DreamComeTrueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02291561DAA489300FB9D20 /* DreamComeTrueUITests.swift */; };
-		A022917B1DAA49E700FB9D20 /* MianViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02291781DAA49E700FB9D20 /* MianViewController.swift */; };
 		A02291811DAA49F500FB9D20 /* GoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A022917E1DAA49F500FB9D20 /* GoalViewController.swift */; };
 		A02291871DAA49FD00FB9D20 /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02291861DAA49FD00FB9D20 /* FindViewController.swift */; };
 		A022918D1DAA4A0600FB9D20 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A022918A1DAA4A0600FB9D20 /* MyViewController.swift */; };
@@ -43,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		0E2F870A9D6E9AD70DB65C23 /* Pods_DreamComeTrue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DreamComeTrue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C34E2E71DAB2D270031130E /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		5C34E2E81DAB2D270031130E /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		66DF0335BA334E968453B27E /* Pods-DreamComeTrue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DreamComeTrue.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DreamComeTrue/Pods-DreamComeTrue.debug.xcconfig"; sourceTree = "<group>"; };
 		988D8E9F30B1EB1D1DAFAB12 /* Pods_DreamComeTrueTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DreamComeTrueTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FDBB0ED1F4E4FBDE6F0A526 /* Pods_DreamComeTrueUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DreamComeTrueUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,7 +63,6 @@
 		A02291521DAA489300FB9D20 /* DreamComeTrueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DreamComeTrueUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A02291561DAA489300FB9D20 /* DreamComeTrueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamComeTrueUITests.swift; sourceTree = "<group>"; };
 		A02291581DAA489300FB9D20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A02291781DAA49E700FB9D20 /* MianViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MianViewController.swift; sourceTree = "<group>"; };
 		A022917E1DAA49F500FB9D20 /* GoalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalViewController.swift; sourceTree = "<group>"; };
 		A02291861DAA49FD00FB9D20 /* FindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
 		A022918A1DAA4A0600FB9D20 /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
@@ -177,7 +179,8 @@
 		A02291771DAA49E700FB9D20 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A02291781DAA49E700FB9D20 /* MianViewController.swift */,
+				5C34E2E71DAB2D270031130E /* MainViewController.swift */,
+				5C34E2E81DAB2D270031130E /* MainViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -431,6 +434,7 @@
 				A02291411DAA489300FB9D20 /* LaunchScreen.storyboard in Resources */,
 				A022913E1DAA489300FB9D20 /* Assets.xcassets in Resources */,
 				A02291391DAA489200FB9D20 /* Main.storyboard in Resources */,
+				5C34E2EA1DAB2D270031130E /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,8 +513,8 @@
 				A02291341DAA489200FB9D20 /* AppDelegate.swift in Sources */,
 				A022918D1DAA4A0600FB9D20 /* MyViewController.swift in Sources */,
 				A02291931DAA4A0E00FB9D20 /* BaseTabbarController.swift in Sources */,
+				5C34E2E91DAB2D270031130E /* MainViewController.swift in Sources */,
 				A022913C1DAA489300FB9D20 /* DreamComeTrue.xcdatamodeld in Sources */,
-				A022917B1DAA49E700FB9D20 /* MianViewController.swift in Sources */,
 				A02291871DAA49FD00FB9D20 /* FindViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

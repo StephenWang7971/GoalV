@@ -22,7 +22,7 @@ class BaseTabbarController: UITabBarController {
     }
     fileprivate func addChildViewControllers()
     {
-        addChildViewController(MianViewController(), title: "主页" )
+        addChildViewController(MainViewController(), title: "主页" )
         addChildViewController(GoalViewController(), title: "目标")
         addChildViewController(FindViewController(), title: "发现")
         addChildViewController(MyViewController(), title: "我的")
