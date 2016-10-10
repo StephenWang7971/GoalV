@@ -1,0 +1,11 @@
+project '/Users/shuizhengqihenkuaile/Desktop/DreamComeTrue/DreamComeTrue.xcodeproj'
+platform :ios, '9.0'
+  use_frameworks!
+
+ target 'DreamComeTrue' do
+
+pod 'Alamofire','~> 4.0'
+pod 'SwiftyJSON', :git =>'https://github.com/IBM-Swift/SwiftyJSON.git'
+
+
+end
