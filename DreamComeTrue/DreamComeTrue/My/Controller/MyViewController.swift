@@ -1,9 +1,9 @@
 //
 //  MyViewController.swift
-//  PersonalDrame
+//  DreamComeTrue
 //
-//  Created by 水蒸气很快乐 on 16/10/9.
-//  Copyright © 2016年 水蒸气很快乐. All rights reserved.
+//  Created by 水蒸气很快乐 on 16/10/10.
+//  Copyright © 2016年 One Hydrogen. All rights reserved.
 //
 
 import UIKit
@@ -14,7 +14,7 @@ class MyViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-      self.view.backgroundColor = UIColor.cyan
+
         // Do any additional setup after loading the view.
     }
 

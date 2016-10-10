@@ -3,7 +3,7 @@
 //  DreamComeTrueUITests
 //
 //  Created by 水蒸气很快乐 on 16/10/9.
-//  Copyright © 2016年 水蒸气很快乐. All rights reserved.
+//  Copyright © 2016年 One Hydrogen. All rights reserved.
 //
 
 import XCTest
