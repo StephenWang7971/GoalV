@@ -77,7 +77,7 @@
 		A02291911DAA4A0E00FB9D20 /* BaseTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabbarController.swift; sourceTree = "<group>"; };
 		A0D89AB81DABCF780064A4CC /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		A0D89AB91DABCF780064A4CC /* MyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyViewController.xib; sourceTree = "<group>"; };
-		A0F957A11DACBDA70057CB69 /* MacroDefination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MacroDefination.swift; path = "Nav+Tab/Controller/MacroDefination.swift"; sourceTree = "<group>"; };
+		A0F957A11DACBDA70057CB69 /* MacroDefination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MacroDefination.swift; path = Controller/MacroDefination.swift; sourceTree = "<group>"; };
 		E313F785B3CFE0AA58B5BAB8 /* Pods-DreamComeTrue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DreamComeTrue.release.xcconfig"; path = "Pods/Target Support Files/Pods-DreamComeTrue/Pods-DreamComeTrue.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,7 +156,6 @@
 		A02291321DAA489200FB9D20 /* DreamComeTrue */ = {
 			isa = PBXGroup;
 			children = (
-				A0F957A11DACBDA70057CB69 /* MacroDefination.swift */,
 				A022918E1DAA4A0E00FB9D20 /* Nav+Tab */,
 				A02291881DAA4A0600FB9D20 /* My */,
 				A022917C1DAA49F500FB9D20 /* Goal */,
@@ -280,6 +279,7 @@
 		A022918E1DAA4A0E00FB9D20 /* Nav+Tab */ = {
 			isa = PBXGroup;
 			children = (
+				A0F957A11DACBDA70057CB69 /* MacroDefination.swift */,
 				A022918F1DAA4A0E00FB9D20 /* Controller */,
 				5C34E2EB1DAB3AE10031130E /* Tab+NavColor.swift */,
 			);
