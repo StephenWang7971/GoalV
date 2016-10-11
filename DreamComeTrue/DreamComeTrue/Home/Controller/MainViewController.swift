@@ -36,8 +36,7 @@ class MainViewController: UIViewController,UIScrollViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //添加目标
-        btnAddGoal.addTarget(self, action:#selector(AddGoal_OnClick(_:)), for:.touchUpInside)
+
 
 //        let imageView=UIImageView(image:UIImage(named:"creat_background"))
 //        
@@ -46,8 +45,9 @@ class MainViewController: UIViewController,UIScrollViewDelegate {
 //        self.view.addSubview(scrollview)
         //判断一下目标的个数是否为零
         //如果为零，显示添加新目标
-
+        btnAddGoal.addTarget(self, action:#selector(AddGoal_OnClick(_:)), for:.touchUpInside)
         //如果不为零，显示目标一
+        //yinchanang
 
 
     }
