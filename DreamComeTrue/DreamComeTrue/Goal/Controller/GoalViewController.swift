@@ -10,7 +10,7 @@ import UIKit
 
 class GoalViewController: UIViewController
 {
-
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -29,6 +29,17 @@ class GoalViewController: UIViewController
         let barButtonItem = UIBarButtonItem(customView:rightBtn)
         self.navigationItem.rightBarButtonItem = barButtonItem
 
+     }
+     func setupGoalButton()
+     {
+        let FGBtn:UIButton = UIButton(type: .custom)
+        FGBtn.frame = CGRect(x: 0,y: 0,width: 40,height:25)
+        FGBtn.setTitle("上一目标", for: UIControlState())
+        FGBtn.titleLabel?.font = UIFont.systemFont(ofSize: 13)
+        FGBtn.setTitleColor(UIColor.white, for: UIControlState())
+        FGBtn.layer.borderColor = UIColor.white.cgColor
+        FGBtn.layer.borderWidth = 1
+        FGBtn.layer.cornerRadius = 3
      }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

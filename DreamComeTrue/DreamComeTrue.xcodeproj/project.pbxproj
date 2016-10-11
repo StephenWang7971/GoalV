@@ -27,6 +27,7 @@
 		A02291931DAA4A0E00FB9D20 /* BaseTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02291911DAA4A0E00FB9D20 /* BaseTabbarController.swift */; };
 		A0D89ABA1DABCF780064A4CC /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D89AB81DABCF780064A4CC /* MyViewController.swift */; };
 		A0D89ABB1DABCF780064A4CC /* MyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0D89AB91DABCF780064A4CC /* MyViewController.xib */; };
+		A0F957A21DACBDA70057CB69 /* MacroDefination.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F957A11DACBDA70057CB69 /* MacroDefination.swift */; };
 		AC39A0D0443797E32303794D /* Pods_DreamComeTrue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E2F870A9D6E9AD70DB65C23 /* Pods_DreamComeTrue.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +79,7 @@
 		A02291911DAA4A0E00FB9D20 /* BaseTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabbarController.swift; sourceTree = "<group>"; };
 		A0D89AB81DABCF780064A4CC /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		A0D89AB91DABCF780064A4CC /* MyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyViewController.xib; sourceTree = "<group>"; };
+		A0F957A11DACBDA70057CB69 /* MacroDefination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MacroDefination.swift; path = "Nav+Tab/Controller/MacroDefination.swift"; sourceTree = "<group>"; };
 		E313F785B3CFE0AA58B5BAB8 /* Pods-DreamComeTrue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DreamComeTrue.release.xcconfig"; path = "Pods/Target Support Files/Pods-DreamComeTrue/Pods-DreamComeTrue.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,6 +144,7 @@
 		A02291321DAA489200FB9D20 /* DreamComeTrue */ = {
 			isa = PBXGroup;
 			children = (
+				A0F957A11DACBDA70057CB69 /* MacroDefination.swift */,
 				A022918E1DAA4A0E00FB9D20 /* Nav+Tab */,
 				A02291881DAA4A0600FB9D20 /* My */,
 				A022917C1DAA49F500FB9D20 /* Goal */,
@@ -496,6 +499,7 @@
 				5C7811C31DACB5B500DA7350 /* AddGoalViewController.swift in Sources */,
 				A02291921DAA4A0E00FB9D20 /* BaseNavigationController.swift in Sources */,
 				5C7811BF1DACB55500DA7350 /* GoalViewController.swift in Sources */,
+				A0F957A21DACBDA70057CB69 /* MacroDefination.swift in Sources */,
 				A02291361DAA489200FB9D20 /* ViewController.swift in Sources */,
 				A02291341DAA489200FB9D20 /* AppDelegate.swift in Sources */,
 				A0D89ABA1DABCF780064A4CC /* MyViewController.swift in Sources */,
