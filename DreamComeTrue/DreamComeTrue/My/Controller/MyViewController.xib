@@ -47,7 +47,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UDE-al-9MS">
-                            <frame key="frameInset" minX="38.93%" minY="17.13%" width="21.87%" height="44.75%"/>
+                            <frame key="frameInset" minX="38.80%" minY="17.13%" width="22.00%" height="44.75%"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="1" green="0.062909023209999998" blue="0.14108651119999999" alpha="1" colorSpace="calibratedRGB"/>
                         </imageView>
@@ -55,7 +55,7 @@
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </view>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pvg-Ay-y6e">
-                    <frame key="frameInset" minY="35.24%" height="3"/>
+                    <frame key="frameInset" minY="35.17%" height="3"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                 </view>
@@ -65,7 +65,7 @@
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                 </view>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LI9-fU-4rt">
-                    <frame key="frameInset" minY="53.53%" height="2"/>
+                    <frame key="frameInset" minY="53.46%" height="2"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                 </view>
@@ -83,16 +83,20 @@
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kuangkuang" translatesAutoresizingMaskIntoConstraints="NO" id="giz-Wi-l5Q">
-                    <frame key="frameInset" minX="70.93%" minY="64.17%" width="24.80%" height="10.35%"/>
+                    <frame key="frameInset" minX="70.80%" minY="64.17%" width="24.80%" height="10.35%"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kuangkuang" translatesAutoresizingMaskIntoConstraints="NO" id="leN-fF-ydC">
-                    <frame key="frameInset" minX="4.27%" minY="78.86%" width="22.67%" height="11.24%"/>
+                    <frame key="frameInset" minX="4.27%" minY="78.79%" width="22.67%" height="11.24%"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kuangkuang" translatesAutoresizingMaskIntoConstraints="NO" id="23B-dg-zdH">
-                    <frame key="frameInset" minX="37.07%" minY="78.86%" width="22.93%" height="11.24%"/>
+                    <frame key="frameInset" minX="37.07%" minY="78.79%" width="22.93%" height="11.24%"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bUS-Ke-bs1">
+                    <frame key="frameInset" minX="36" minY="438" width="41" height="33"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
