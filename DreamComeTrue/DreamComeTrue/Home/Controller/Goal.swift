@@ -7,17 +7,17 @@
 //
 
 import Foundation
-//import CoreData
-//extension Goal {
-//    @nonobjc public class func fetchRequest() -> NSFetchRequest<Goal> {
-//        return NSFetchRequest<Goal>(entityName: "Goal");
-//    }
-//    @NSManaged public var address: String?
-//    @NSManaged public var email: String?
-//    @NSManaged public var headImg: NSData?
-//    @NSManaged public var isLeave: Bool
-//    @NSManaged public var name: String?
-//    @NSManaged public var tel: String?
-//    @NSManaged public var birthDay: String?
-//}
+import CoreData
+extension User {
+    @nonobjc public class func fetchRequest() -> NSFetchRequest<User> {
+        return NSFetchRequest<User>(entityName: "User");
+    }
+    public var address: String?
+     public var email: String?
+     public var headImg: NSData?
+     public var isLeave: Bool
+    public var name: String?
+     public var tel: String?
+     public var birthDay: String?
+}
 

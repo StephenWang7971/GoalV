@@ -14,7 +14,6 @@
 		5C7811C01DACB55500DA7350 /* GoalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C7811BE1DACB55500DA7350 /* GoalViewController.xib */; };
 		5C7811C31DACB5B500DA7350 /* AddGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7811C11DACB5B500DA7350 /* AddGoalViewController.swift */; };
 		5C7811C41DACB5B500DA7350 /* AddGoalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C7811C21DACB5B500DA7350 /* AddGoalViewController.xib */; };
-		5CEEF92F1DACAEF500DABA13 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEEF92E1DACAEF500DABA13 /* Goal.swift */; };
 		A02291341DAA489200FB9D20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02291331DAA489200FB9D20 /* AppDelegate.swift */; };
 		A02291361DAA489200FB9D20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02291351DAA489200FB9D20 /* ViewController.swift */; };
 		A02291391DAA489200FB9D20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A02291371DAA489200FB9D20 /* Main.storyboard */; };
@@ -56,7 +55,6 @@
 		5C7811BE1DACB55500DA7350 /* GoalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoalViewController.xib; sourceTree = "<group>"; };
 		5C7811C11DACB5B500DA7350 /* AddGoalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGoalViewController.swift; sourceTree = "<group>"; };
 		5C7811C21DACB5B500DA7350 /* AddGoalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddGoalViewController.xib; sourceTree = "<group>"; };
-		5CEEF92E1DACAEF500DABA13 /* Goal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Goal.swift; path = DreamComeTrue/Home/Controller/Goal.swift; sourceTree = SOURCE_ROOT; };
 		66DF0335BA334E968453B27E /* Pods-DreamComeTrue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DreamComeTrue.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DreamComeTrue/Pods-DreamComeTrue.debug.xcconfig"; sourceTree = "<group>"; };
 		988D8E9F30B1EB1D1DAFAB12 /* Pods_DreamComeTrueTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DreamComeTrueTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FDBB0ED1F4E4FBDE6F0A526 /* Pods_DreamComeTrueUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DreamComeTrueUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +113,20 @@
 				9FDBB0ED1F4E4FBDE6F0A526 /* Pods_DreamComeTrueUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5C7811C51DACB8DA00DA7350 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5C7811C61DACB8DA00DA7350 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		A02291271DAA489200FB9D20 = {
@@ -178,9 +190,9 @@
 		A02291761DAA49E700FB9D20 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				5C7811C51DACB8DA00DA7350 /* Model */,
+				5C7811C61DACB8DA00DA7350 /* View */,
 				A02291771DAA49E700FB9D20 /* Controller */,
-				A02291791DAA49E700FB9D20 /* Model */,
-				A022917A1DAA49E700FB9D20 /* View */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -194,21 +206,6 @@
 				5C34E2E81DAB2D270031130E /* MainViewController.xib */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		A02291791DAA49E700FB9D20 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				5CEEF92E1DACAEF500DABA13 /* Goal.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		A022917A1DAA49E700FB9D20 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		A022917C1DAA49F500FB9D20 /* Goal */ = {
@@ -500,7 +497,6 @@
 				A02291341DAA489200FB9D20 /* AppDelegate.swift in Sources */,
 				A0D89ABA1DABCF780064A4CC /* MyViewController.swift in Sources */,
 				5C34E2EC1DAB3AE10031130E /* Tab+NavColor.swift in Sources */,
-				5CEEF92F1DACAEF500DABA13 /* Goal.swift in Sources */,
 				A02291931DAA4A0E00FB9D20 /* BaseTabbarController.swift in Sources */,
 				5C34E2E91DAB2D270031130E /* MainViewController.swift in Sources */,
 				A022913C1DAA489300FB9D20 /* DreamComeTrue.xcdatamodeld in Sources */,
