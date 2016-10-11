@@ -415,11 +415,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A02291411DAA489300FB9D20 /* LaunchScreen.storyboard in Resources */,
-<<<<<<< HEAD
-				A0D89AC31DACA5E50064A4CC /* GoalViewController.xib in Resources */,
-=======
-				5CEEF92D1DAC90BC00DABA13 /* AddGoalViewController.xib in Resources */,
->>>>>>> origin/master
 				A022913E1DAA489300FB9D20 /* Assets.xcassets in Resources */,
 				A02291391DAA489200FB9D20 /* Main.storyboard in Resources */,
 				5C34E2EA1DAB2D270031130E /* MainViewController.xib in Resources */,
@@ -503,11 +498,7 @@
 				5C34E2EC1DAB3AE10031130E /* Tab+NavColor.swift in Sources */,
 				5CEEF92F1DACAEF500DABA13 /* Goal.swift in Sources */,
 				A02291931DAA4A0E00FB9D20 /* BaseTabbarController.swift in Sources */,
-<<<<<<< HEAD
-				A0D89AC21DACA5E50064A4CC /* GoalViewController.swift in Sources */,
-=======
-				5CEEF92C1DAC90BC00DABA13 /* AddGoalViewController.swift in Sources */,
->>>>>>> origin/master
+
 				5C34E2E91DAB2D270031130E /* MainViewController.swift in Sources */,
 				A022913C1DAA489300FB9D20 /* DreamComeTrue.xcdatamodeld in Sources */,
 			);
