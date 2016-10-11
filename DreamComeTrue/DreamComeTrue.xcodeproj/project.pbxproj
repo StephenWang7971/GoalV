@@ -18,11 +18,12 @@
 		A02291411DAA489300FB9D20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A022913F1DAA489300FB9D20 /* LaunchScreen.storyboard */; };
 		A022914C1DAA489300FB9D20 /* DreamComeTrueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A022914B1DAA489300FB9D20 /* DreamComeTrueTests.swift */; };
 		A02291571DAA489300FB9D20 /* DreamComeTrueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02291561DAA489300FB9D20 /* DreamComeTrueUITests.swift */; };
-		A02291811DAA49F500FB9D20 /* GoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A022917E1DAA49F500FB9D20 /* GoalViewController.swift */; };
 		A02291921DAA4A0E00FB9D20 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02291901DAA4A0E00FB9D20 /* BaseNavigationController.swift */; };
 		A02291931DAA4A0E00FB9D20 /* BaseTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02291911DAA4A0E00FB9D20 /* BaseTabbarController.swift */; };
 		A0D89ABA1DABCF780064A4CC /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D89AB81DABCF780064A4CC /* MyViewController.swift */; };
 		A0D89ABB1DABCF780064A4CC /* MyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0D89AB91DABCF780064A4CC /* MyViewController.xib */; };
+		A0D89AC21DACA5E50064A4CC /* GoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D89AC01DACA5E50064A4CC /* GoalViewController.swift */; };
+		A0D89AC31DACA5E50064A4CC /* GoalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0D89AC11DACA5E50064A4CC /* GoalViewController.xib */; };
 		AC39A0D0443797E32303794D /* Pods_DreamComeTrue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E2F870A9D6E9AD70DB65C23 /* Pods_DreamComeTrue.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,11 +66,12 @@
 		A02291521DAA489300FB9D20 /* DreamComeTrueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DreamComeTrueUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A02291561DAA489300FB9D20 /* DreamComeTrueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamComeTrueUITests.swift; sourceTree = "<group>"; };
 		A02291581DAA489300FB9D20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A022917E1DAA49F500FB9D20 /* GoalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalViewController.swift; sourceTree = "<group>"; };
 		A02291901DAA4A0E00FB9D20 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		A02291911DAA4A0E00FB9D20 /* BaseTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabbarController.swift; sourceTree = "<group>"; };
 		A0D89AB81DABCF780064A4CC /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		A0D89AB91DABCF780064A4CC /* MyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyViewController.xib; sourceTree = "<group>"; };
+		A0D89AC01DACA5E50064A4CC /* GoalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalViewController.swift; sourceTree = "<group>"; };
+		A0D89AC11DACA5E50064A4CC /* GoalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoalViewController.xib; sourceTree = "<group>"; };
 		E313F785B3CFE0AA58B5BAB8 /* Pods-DreamComeTrue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DreamComeTrue.release.xcconfig"; path = "Pods/Target Support Files/Pods-DreamComeTrue/Pods-DreamComeTrue.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -213,7 +215,8 @@
 		A022917D1DAA49F500FB9D20 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A022917E1DAA49F500FB9D20 /* GoalViewController.swift */,
+				A0D89AC01DACA5E50064A4CC /* GoalViewController.swift */,
+				A0D89AC11DACA5E50064A4CC /* GoalViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A02291411DAA489300FB9D20 /* LaunchScreen.storyboard in Resources */,
+				A0D89AC31DACA5E50064A4CC /* GoalViewController.xib in Resources */,
 				A022913E1DAA489300FB9D20 /* Assets.xcassets in Resources */,
 				A02291391DAA489200FB9D20 /* Main.storyboard in Resources */,
 				5C34E2EA1DAB2D270031130E /* MainViewController.xib in Resources */,
@@ -481,11 +485,11 @@
 			files = (
 				A02291921DAA4A0E00FB9D20 /* BaseNavigationController.swift in Sources */,
 				A02291361DAA489200FB9D20 /* ViewController.swift in Sources */,
-				A02291811DAA49F500FB9D20 /* GoalViewController.swift in Sources */,
 				A02291341DAA489200FB9D20 /* AppDelegate.swift in Sources */,
 				A0D89ABA1DABCF780064A4CC /* MyViewController.swift in Sources */,
 				5C34E2EC1DAB3AE10031130E /* Tab+NavColor.swift in Sources */,
 				A02291931DAA4A0E00FB9D20 /* BaseTabbarController.swift in Sources */,
+				A0D89AC21DACA5E50064A4CC /* GoalViewController.swift in Sources */,
 				5C34E2E91DAB2D270031130E /* MainViewController.swift in Sources */,
 				A022913C1DAA489300FB9D20 /* DreamComeTrue.xcdatamodeld in Sources */,
 			);
