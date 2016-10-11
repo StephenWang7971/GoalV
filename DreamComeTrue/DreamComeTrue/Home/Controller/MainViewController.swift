@@ -36,18 +36,11 @@ class MainViewController: UIViewController,UIScrollViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
-//        let imageView=UIImageView(image:UIImage(named:"creat_background"))
-//        
-//        scrollview.delegate = self
-//        scrollview.addSubview(imageView);
-//        self.view.addSubview(scrollview)
         //判断一下目标的个数是否为零
         //如果为零，显示添加新目标
         btnAddGoal.addTarget(self, action:#selector(AddGoal_OnClick(_:)), for:.touchUpInside)
         //如果不为零，显示目标一
-        //yinchanang
+        createScrollerView()
 
 
     }
@@ -63,6 +56,52 @@ class MainViewController: UIViewController,UIScrollViewDelegate {
     //视图滚动中一直触发
     func scrollViewDidScroll(scrollView: UIScrollView) {
         print("x:\(scrollView.contentOffset.x) y:\(scrollView.contentOffset.y)")
+    }
+
+    //创建滚动视图
+    func createScrollerView(){
+        //创建滚动视图
+        let numOfPages = 3
+        let pageWidth = 375
+        //scrollView的初始化
+        let scrollView = UIScrollView()
+        scrollView.frame = CGRect(x:0,y:180,width:375,height:450)
+        //为了让内容横向滚动，设置横向内容宽度为3个页面的宽度总和
+        scrollView.contentSize=CGSize(width:pageWidth*numOfPages,height:0)
+        scrollView.isPagingEnabled = true
+        scrollView.showsHorizontalScrollIndicator = false
+        scrollView.showsVerticalScrollIndicator = false
+        scrollView.scrollsToTop = false
+
+        //添加第二个视图目标
+        let goalview2 = UIView()
+        goalview2.frame = CGRect(x:450,y:60,width:271,height:380)
+
+        //背景图
+        let imageview = UIImageView()
+        imageview.frame = CGRect(x:0,y:0,width:271,height:380)
+        imageview.image = UIImage(named:"center")!
+        goalview2.addSubview(imageview)
+
+
+        scrollView.addSubview(goalview2)
+        //添加第三个视图目标
+        let goalview3 = UIView()
+        goalview3.frame = CGRect(x:450+375,y:60,width:271,height:380)
+        goalview3.backgroundColor = UIColor(patternImage: UIImage(named:"center")!)
+        scrollView.addSubview(goalview3)
+        //添加子页面
+        for i in 0..<numOfPages{
+            if(i == 0){
+                scrollView.addSubview(goalView)
+            }
+            if(i == 1){
+                scrollView.addSubview(goalview2)
+            }
+            print("%d",i)
+
+        }
+        self.view.addSubview(scrollView)
     }
 
     /*
