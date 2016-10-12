@@ -41,8 +41,28 @@ class MainViewController: UIViewController,UIScrollViewDelegate {
         btnAddGoal.addTarget(self, action:#selector(AddGoal_OnClick(_:)), for:.touchUpInside)
         //如果不为零，显示目标一
         createScrollerView()
+        setupRightBarButtonItem()
 
+    }
+    
+    func setupRightBarButtonItem()
+    {
+            let rightBtn: UIButton = UIButton(type: .custom)
+            rightBtn.frame = CGRect(x: 0,y: 0,width: 40,height:25)
+            rightBtn.setTitle("目标", for: UIControlState())
+            rightBtn.titleLabel?.font = UIFont.systemFont(ofSize: 13)
+            rightBtn.setTitleColor(UIColor.white, for: UIControlState())
+            rightBtn.layer.borderColor = UIColor.white.cgColor
+            rightBtn.layer.borderWidth = 1
+            rightBtn.layer.cornerRadius = 3
+            rightBtn.addTarget(self, action: #selector(CheckGoal(_:)) ,for:.touchUpInside)
 
+            let barButtonItem = UIBarButtonItem(customView:rightBtn)
+            self.navigationItem.rightBarButtonItem = barButtonItem
+    }
+    func CheckGoal(_ button:UIButton)
+    {
+        self.navigationController?.pushViewController(CheckViewController(), animated:true)
     }
     func AddGoal_OnClick(_ button:UIButton){
         //跳转到添加页面

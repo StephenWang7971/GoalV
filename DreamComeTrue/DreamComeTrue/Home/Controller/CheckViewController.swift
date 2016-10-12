@@ -1,5 +1,5 @@
 //
-//  GoalViewController.swift
+//  CheckViewController.swift
 //  DreamComeTrue
 //
 //  Created by 水蒸气很快乐 on 16/10/12.
@@ -8,30 +8,15 @@
 
 import UIKit
 
-class GoalViewController: UIViewController
-{
-    @IBOutlet weak var mainScrollView: UIScrollView!
-    override func viewDidLoad()
-    {
-        super.viewDidLoad()
-        CreateUIBezierPath()
-        
-    }
-    func CreateUIButton()
-    {
-    }
-    func CreateUIBezierPath()
-    {
-        let myBezier = UIBezierPath()
-        myBezier.move(to: CGPoint(x: 0, y: 0))
-        myBezier.addLine(to: CGPoint(x: 100, y: 0))
-        myBezier.addLine(to: CGPoint(x: 50, y: 100))
-        myBezier.close()
-        let color = UIColor.red   //returns color
-        color.setStroke()
+class CheckViewController: UIViewController {
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
     }
-       override func didReceiveMemoryWarning() {
+
+    override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
