@@ -48,6 +48,7 @@ class MainViewController: UIViewController,UIScrollViewDelegate {
 
 
     }
+
     func AddGoal_OnClick(_ button:UIButton){
         //跳转到添加页面
         let vc = AddGoalViewController()
@@ -166,6 +167,19 @@ class MainViewController: UIViewController,UIScrollViewDelegate {
         image3.backgroundColor = UIColor.blue
         goalview3.addSubview(image3)
 
+        drawRect(rect: CGRect(x:10,y:300,width:100,height:100))
+    }
+    // 弧线
+    func drawRect(rect: CGRect) {
+        let color = UIColor.red
+        color.set() // 设置线条颜色
 
+        //let aPath = UIBezierPath(arcCenter: CGPointMake(150, 150), radius: 75,
+                                 //startAngle: 0, endAngle: (CGFloat)(90*M_PI/180), clockwise: true)
+
+        //aPath.lineWidth = 5.0 // 线条宽度
+
+        //aPath.stroke() // Draws line 根据坐标点连线，不填充
+        //    aPath.fill() // Draws line 根据坐标点连线，填充  
     }
 }
