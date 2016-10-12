@@ -201,8 +201,14 @@ class MainViewController: UIViewController,UIScrollViewDelegate {
         btnMoreContent.frame = CGRect(x:130, y:300,width:100,height:20)
         btnMoreContent.setTitle("了解详情", for: UIControlState())
         btnMoreContent.backgroundColor = UIColor.red
+        btnMoreContent.addTarget(self, action: #selector(btnMoreContent_OnClick(_:)) ,for:.touchUpInside)
 
-        
     }
+    //了解详情按钮的事件
+    func btnMoreContent_OnClick(_ button:UIButton) {
+
+
+    }
+    
 
 }

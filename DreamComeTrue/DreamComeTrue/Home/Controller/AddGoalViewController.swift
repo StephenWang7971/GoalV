@@ -34,13 +34,15 @@ class AddGoalViewController: UIViewController {
 
     //开始创建
     @IBOutlet weak var btnCreateGoal: UIButton!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "创建目标"
         //添加一个事件
         btnCreateGoal.addTarget(self, action: #selector(StartCreateGoal(_:)) ,for:.touchUpInside)
-
+        btnPhoto1.addTarget(self, action: #selector(btnPhoto1_OnClick(_:)), for:.touchUpInside)
+        btnPhoto2.addTarget(self, action: #selector(btnPhoto2_OnClick(_:)), for:.touchUpInside)
+        btnPhoto3.addTarget(self, action: #selector(btnPhoto3_OnClick(_:)), for:.touchUpInside)
     }
 
     override func didReceiveMemoryWarning() {
@@ -94,14 +96,28 @@ class AddGoalViewController: UIViewController {
             print(error)
         }
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    //上传第一张照片的点击事件
+    func btnPhoto1_OnClick(_ button:UIButton){
+        popupView()
     }
-    */
+    func btnPhoto2_OnClick(_ button:UIButton){
+        popupView()
+    }
+    func btnPhoto3_OnClick(_ button:UIButton){
+        popupView()
+    }
+    //底部弹窗
+    func popupView(){
+        var alert: UIAlertController!
+        alert = UIAlertController(title: "提示", message: "添加照片", preferredStyle: UIAlertControllerStyle.actionSheet)
+        let cleanAction = UIAlertAction(title: "取消", style: UIAlertActionStyle.cancel, handler: nil)
+        let photoAction = UIAlertAction(title: "拍照", style: UIAlertActionStyle.default, handler: nil)
+        let choseAction = UIAlertAction(title: "从手机相册选择", style: UIAlertActionStyle.default, handler: nil)
+        alert.addAction(cleanAction)
+        alert.addAction(photoAction)
+        alert.addAction(choseAction)
+        self.present(alert, animated: true, completion: nil)
+    }
+
 
 }
