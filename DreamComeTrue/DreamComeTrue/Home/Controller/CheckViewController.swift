@@ -25,7 +25,7 @@ class CheckViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         self.tableView = UITableView(frame:self.view!.frame)
         self.tableView!.delegate = self
         self.tableView!.dataSource = self
-        self.tableView!.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        self.tableView!.register(CheckTableViewCell.self, forCellReuseIdentifier: "cell")
         self.view?.addSubview(self.tableView!)
     }
     // tableView 的代理方法

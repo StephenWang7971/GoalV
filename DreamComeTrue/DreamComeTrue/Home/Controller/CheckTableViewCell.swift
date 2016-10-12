@@ -8,11 +8,15 @@
 
 import UIKit
 
-class CheckTableViewCell: UITableViewCell {
+class CheckTableViewCell: UITableViewCell
+{
+        @IBOutlet weak var DateLabel: UILabel!
+        @IBOutlet weak var TimeLabel: UILabel!
+        @IBOutlet weak var GoalLabel: UILabel!
+        @IBOutlet weak var MoneyLabel: UILabel!
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    override func awakeFromNib()
+    {
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
