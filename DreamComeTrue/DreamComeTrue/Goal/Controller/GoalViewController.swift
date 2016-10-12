@@ -8,15 +8,26 @@
 
 import UIKit
 
-class GoalViewController: UIViewController {
-
-    override func viewDidLoad() {
+class GoalViewController: UIViewController
+{
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        CreateUIBezierPath()
     }
+    func CreateUIBezierPath()
+    {
+        let myBezier = UIBezierPath()
+        myBezier.move(to: CGPoint(x: 0, y: 0))
+        myBezier.addLine(to: CGPoint(x: 100, y: 0))
+        myBezier.addLine(to: CGPoint(x: 50, y: 100))
+        myBezier.close()
+        let color = UIColor.red   //returns color
+        color.setStroke()
 
-    override func didReceiveMemoryWarning() {
+    }
+       override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
