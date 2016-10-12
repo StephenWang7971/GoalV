@@ -60,7 +60,6 @@ class MainViewController: UIViewController,UIScrollViewDelegate {
             rightBtn.layer.borderWidth = 1
             rightBtn.layer.cornerRadius = 3
             rightBtn.addTarget(self, action: #selector(CheckGoal(_:)) ,for:.touchUpInside)
-
             let barButtonItem = UIBarButtonItem(customView:rightBtn)
             self.navigationItem.rightBarButtonItem = barButtonItem
     }
