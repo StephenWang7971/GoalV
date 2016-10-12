@@ -9,8 +9,9 @@
 
 import UIKit
 import CoreData
+import Alamofire
 
-class AddGoalViewController: UIViewController {
+class AddGoalViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
     //名称
     @IBOutlet weak var txtName: UITextField!
 
@@ -110,14 +111,83 @@ class AddGoalViewController: UIViewController {
     func popupView(){
         var alert: UIAlertController!
         alert = UIAlertController(title: "提示", message: "添加照片", preferredStyle: UIAlertControllerStyle.actionSheet)
-        let cleanAction = UIAlertAction(title: "取消", style: UIAlertActionStyle.cancel, handler: nil)
-        let photoAction = UIAlertAction(title: "拍照", style: UIAlertActionStyle.default, handler: nil)
-        let choseAction = UIAlertAction(title: "从手机相册选择", style: UIAlertActionStyle.default, handler: nil)
+        let cleanAction = UIAlertAction(title: "取消", style: UIAlertActionStyle.cancel,handler:nil)
+        let photoAction = UIAlertAction(title: "拍照", style: UIAlertActionStyle.default){ (action:UIAlertAction)in
+            self.camera()
+        }
+        let choseAction = UIAlertAction(title: "从手机相册选择", style: UIAlertActionStyle.default){ (action:UIAlertAction)in
+            self.photo()
+        }
+
         alert.addAction(cleanAction)
         alert.addAction(photoAction)
         alert.addAction(choseAction)
         self.present(alert, animated: true, completion: nil)
     }
+    //调用照相机方法
+    func camera(){
+        let pick:UIImagePickerController = UIImagePickerController()
+        pick.delegate = self
+        pick.sourceType = UIImagePickerControllerSourceType.camera
+        self.present(pick, animated: true, completion: nil)
+    }
+    //调用相册方法
 
+    func photo(){
+//        let pick:UIImagePickerController = UIImagePickerController()
+//        pick.delegate = self
+//        pick.sourceType = UIImagePickerControllerSourceType.photoLibrary
+//        self.present(pick, animated: true, completion: nil)
+        //判断设置是否支持图片库
+        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary){
+            //初始化图片控制器
+            let picker = UIImagePickerController()
+            //设置代理
+            picker.delegate = self
+            //指定图片控制器类型
+            picker.sourceType = UIImagePickerControllerSourceType.photoLibrary
+            //弹出控制器，显示界面
+            self.present(picker, animated: true, completion: {
+                () -> Void in
+            })
+        }else{
+            print("读取相册错误")
+        }
+    }
+    //选择图片成功后代理
+    func imagePickerController(picker: UIImagePickerController,
+                               didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        //获取选择的原图
+        let pickedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+
+        //将选择的图片保存到Document目录下
+        let fileManager = FileManager.default
+        let rootPath = NSSearchPathForDirectoriesInDomains(.documentDirectory,
+                                                           .userDomainMask, true)[0] as String
+        let filePath = "\(rootPath)/pickedimage.jpg"
+        let imageData = UIImageJPEGRepresentation(pickedImage, 1.0)
+        fileManager.createFile(atPath: filePath, contents: imageData, attributes: nil)
+
+        //上传图片
+        if (fileManager.fileExists(atPath: filePath)){
+            //取得NSURL
+            let imageNSURL:NSURL = NSURL.init(fileURLWithPath: filePath)
+
+            //使用Alamofire上传
+//            Alamofire.upload(.POST, "http://www.hangge.com/upload.php", file: imageNSURL)
+//                .responseString { response in
+//                    print("Success: \(response.result.isSuccess)")
+//                    print("Response String: \(response.result.value)")
+//            }
+//            Alamofire.upload(imageNSURL, to: "", method: .post, headers: nil).responseString { response in
+//                                    print("Success: \(response.result.isSuccess)")
+//                                    print("Response String: \(response.result.value)")
+//                            }
+//
+        }
+
+        //图片控制器退出
+        picker.dismiss(animated: true, completion:nil)
+    }
 
 }
