@@ -13,17 +13,54 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Isp-94-7dB">
-                    <frame key="frameInset" minY="64"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ei-M3-vB6">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b2H-4G-m3W">
+                            <color key="backgroundColor" red="0.2855391243" green="1" blue="0.35154379499999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="EUz-me-1Ds"/>
+                                <constraint firstAttribute="width" constant="260" id="fTA-wS-Ktl"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mSX-2z-Oqt">
+                            <color key="backgroundColor" red="1" green="0.093775098160000001" blue="0.063415728960000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="dSg-Tq-UgJ"/>
+                                <constraint firstAttribute="width" constant="63" id="ofz-o3-0CY"/>
+                            </constraints>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="middle" translatesAutoresizingMaskIntoConstraints="NO" id="AMq-1g-46Z">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="225" id="3Yg-sb-VXj"/>
+                                <constraint firstAttribute="height" constant="172" id="r3b-46-jFX"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="mSX-2z-Oqt" firstAttribute="top" secondItem="4ei-M3-vB6" secondAttribute="top" constant="10" id="1Dz-pd-mAO"/>
+                        <constraint firstAttribute="trailing" secondItem="b2H-4G-m3W" secondAttribute="trailing" constant="35" id="1zP-P0-9Hf"/>
+                        <constraint firstItem="AMq-1g-46Z" firstAttribute="leading" secondItem="4ei-M3-vB6" secondAttribute="leading" constant="35" id="3Al-XD-0pD"/>
+                        <constraint firstItem="mSX-2z-Oqt" firstAttribute="leading" secondItem="4ei-M3-vB6" secondAttribute="leading" constant="5" id="6qB-iH-JK2"/>
+                        <constraint firstItem="b2H-4G-m3W" firstAttribute="top" secondItem="4ei-M3-vB6" secondAttribute="top" constant="16" id="Hdq-ql-7Hm"/>
+                        <constraint firstItem="b2H-4G-m3W" firstAttribute="leading" secondItem="4ei-M3-vB6" secondAttribute="leading" constant="25" id="Kem-GX-A1f"/>
+                        <constraint firstAttribute="bottom" secondItem="b2H-4G-m3W" secondAttribute="bottom" constant="448" id="Pk3-fA-xid"/>
+                        <constraint firstItem="AMq-1g-46Z" firstAttribute="top" secondItem="b2H-4G-m3W" secondAttribute="bottom" constant="10" id="ewN-ha-uNY"/>
+                    </constraints>
                 </scrollView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <point key="canvasLocation" x="-111.5" y="104.5"/>
+            <constraints>
+                <constraint firstItem="4ei-M3-vB6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8wM-u4-Ekp"/>
+                <constraint firstAttribute="bottom" secondItem="4ei-M3-vB6" secondAttribute="bottom" id="K8o-VF-KM4"/>
+                <constraint firstAttribute="trailing" secondItem="4ei-M3-vB6" secondAttribute="trailing" id="Og8-du-pKR"/>
+                <constraint firstItem="4ei-M3-vB6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="xGz-2g-tSI"/>
+            </constraints>
         </view>
     </objects>
+    <resources>
+        <image name="middle" width="225" height="230"/>
+    </resources>
 </document>
