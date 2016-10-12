@@ -24,6 +24,8 @@
 		A02291931DAA4A0E00FB9D20 /* BaseTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02291911DAA4A0E00FB9D20 /* BaseTabbarController.swift */; };
 		A0D89ABA1DABCF780064A4CC /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D89AB81DABCF780064A4CC /* MyViewController.swift */; };
 		A0D89ABB1DABCF780064A4CC /* MyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0D89AB91DABCF780064A4CC /* MyViewController.xib */; };
+		A0F16A291DAE0DE300D271D0 /* CheckTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F16A271DAE0DE300D271D0 /* CheckTableViewCell.swift */; };
+		A0F16A2A1DAE0DE300D271D0 /* CheckTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0F16A281DAE0DE300D271D0 /* CheckTableViewCell.xib */; };
 		A0F957A21DACBDA70057CB69 /* MacroDefination.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F957A11DACBDA70057CB69 /* MacroDefination.swift */; };
 		A0FAD3431DADD53400DD375F /* GoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FAD3411DADD53400DD375F /* GoalViewController.swift */; };
 		A0FAD3441DADD53400DD375F /* GoalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0FAD3421DADD53400DD375F /* GoalViewController.xib */; };
@@ -77,6 +79,8 @@
 		A02291911DAA4A0E00FB9D20 /* BaseTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabbarController.swift; sourceTree = "<group>"; };
 		A0D89AB81DABCF780064A4CC /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		A0D89AB91DABCF780064A4CC /* MyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyViewController.xib; sourceTree = "<group>"; };
+		A0F16A271DAE0DE300D271D0 /* CheckTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckTableViewCell.swift; sourceTree = "<group>"; };
+		A0F16A281DAE0DE300D271D0 /* CheckTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CheckTableViewCell.xib; sourceTree = "<group>"; };
 		A0F957A11DACBDA70057CB69 /* MacroDefination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MacroDefination.swift; path = Controller/MacroDefination.swift; sourceTree = "<group>"; };
 		A0FAD3411DADD53400DD375F /* GoalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalViewController.swift; sourceTree = "<group>"; };
 		A0FAD3421DADD53400DD375F /* GoalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoalViewController.xib; sourceTree = "<group>"; };
@@ -213,6 +217,8 @@
 				5C34E2E81DAB2D270031130E /* MainViewController.xib */,
 				A0FAD3451DADFAA500DD375F /* CheckViewController.swift */,
 				A0FAD3461DADFAA500DD375F /* CheckViewController.xib */,
+				A0F16A271DAE0DE300D271D0 /* CheckTableViewCell.swift */,
+				A0F16A281DAE0DE300D271D0 /* CheckTableViewCell.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -434,6 +440,7 @@
 				A02291391DAA489200FB9D20 /* Main.storyboard in Resources */,
 				5C7811C41DACB5B500DA7350 /* AddGoalViewController.xib in Resources */,
 				5C34E2EA1DAB2D270031130E /* MainViewController.xib in Resources */,
+				A0F16A2A1DAE0DE300D271D0 /* CheckTableViewCell.xib in Resources */,
 				A0FAD3481DADFAA500DD375F /* CheckViewController.xib in Resources */,
 				A0FAD3441DADD53400DD375F /* GoalViewController.xib in Resources */,
 				A0D89ABB1DABCF780064A4CC /* MyViewController.xib in Resources */,
@@ -516,6 +523,7 @@
 				A02291341DAA489200FB9D20 /* AppDelegate.swift in Sources */,
 				A0D89ABA1DABCF780064A4CC /* MyViewController.swift in Sources */,
 				5C34E2EC1DAB3AE10031130E /* Tab+NavColor.swift in Sources */,
+				A0F16A291DAE0DE300D271D0 /* CheckTableViewCell.swift in Sources */,
 				A02291931DAA4A0E00FB9D20 /* BaseTabbarController.swift in Sources */,
 				A0FAD3431DADD53400DD375F /* GoalViewController.swift in Sources */,
 				A0FAD3471DADFAA500DD375F /* CheckViewController.swift in Sources */,

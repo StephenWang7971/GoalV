@@ -36,8 +36,6 @@ class MainViewController: UIViewController,UIScrollViewDelegate {
     let goalview3 = UIView()
     let HEIGHT = UIScreen.main.bounds.size.height
     let WIDTH = UIScreen.main.bounds.size.width
-
-
     override func viewDidLoad() {
         super.viewDidLoad()
         //判断一下目标的个数是否为零
@@ -46,9 +44,9 @@ class MainViewController: UIViewController,UIScrollViewDelegate {
         //如果不为零，显示目标一
         createScrollerView()
         setupRightBarButtonItem()
+       
 
     }
-    
     func setupRightBarButtonItem()
     {
             let rightBtn: UIButton = UIButton(type: .custom)
