@@ -182,20 +182,29 @@ class MainViewController: UIViewController,UIScrollViewDelegate {
         goalview3.addSubview(image2)
 
         let image3 = UIImageView()
-        image3.frame = CGRect(x:goalview3.frame.size.width/3*2+10,y:210,width:goalview3.frame.size.width/3-20,height:40)
+        image3.frame = CGRect(x:goalview3.frame.size.width/3*2+5,y:210,width:goalview3.frame.size.width/3-20,height:40)
         image3.backgroundColor = UIColor.blue
         goalview3.addSubview(image3)
 
-        //drawRect(rect: CGRect(x:10,y:300,width:100,height:100))
+        let btnYuan = UIButton()
+        btnYuan.frame = CGRect(x:20,y:260,width:80,height:80)
+        btnYuan.layer.masksToBounds = true
+        btnYuan.layer.cornerRadius = 40
+        btnYuan.layer.borderWidth = 3.0
+        btnYuan.layer.borderColor = UIColor.red.cgColor
+        btnYuan.clipsToBounds = true
+        btnYuan.setTitle("完成", for: UIControlState())
+        btnYuan.setTitleColor(UIColor.red,for: UIControlState())
+        goalview3.addSubview(btnYuan)
+
+        //了解更多按钮
+        let btnMoreContent = UIButton()
+        goalview3.addSubview(btnMoreContent)
+        btnMoreContent.frame = CGRect(x:130, y:300,width:100,height:20)
+        btnMoreContent.setTitle("了解详情", for: UIControlState())
+        btnMoreContent.backgroundColor = UIColor.red
+
+        
     }
-    // 弧线
-    func drawRect(rect: CGRect) {
-        let color = UIColor.red
-        color.set() // 设置线条颜色
-        let aPath = UIBezierPath(arcCenter: CGPoint(x:150, y:150), radius: 75,
-                                 startAngle: 0, endAngle: (CGFloat)(90*M_PI/180), clockwise: true)
-        aPath.lineWidth = 5.0 // 线条宽度
-        aPath.stroke() // Draws line 根据坐标点连线，不填充
-        aPath.fill() // Draws line 根据坐标点连线，填充
-    }
+
 }
