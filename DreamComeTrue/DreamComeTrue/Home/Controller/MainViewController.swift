@@ -167,7 +167,7 @@ class MainViewController: UIViewController,UIScrollViewDelegate {
         image3.backgroundColor = UIColor.blue
         goalview3.addSubview(image3)
 
-        drawRect(rect: CGRect(x:10,y:300,width:100,height:100))
+        //drawRect(rect: CGRect(x:10,y:300,width:100,height:100))
     }
     // 弧线
     func drawRect(rect: CGRect) {
