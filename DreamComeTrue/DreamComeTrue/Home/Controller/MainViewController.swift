@@ -33,6 +33,10 @@ class MainViewController: UIViewController,UIScrollViewDelegate {
 
     //添加一个目标按钮
     @IBOutlet weak var btnAddGoal: UIButton!
+    let goalview3 = UIView()
+    let HEIGHT = UIScreen.main.bounds.size.height
+    let WIDTH = UIScreen.main.bounds.size.width
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,56 +66,106 @@ class MainViewController: UIViewController,UIScrollViewDelegate {
     func createScrollerView(){
         //创建滚动视图
         let numOfPages = 3
-        let pageWidth = 375
+        let pageWidth = WIDTH
         //scrollView的初始化
         let scrollView = UIScrollView()
-        scrollView.frame = CGRect(x:0,y:180,width:375,height:450)
+        scrollView.frame = CGRect(x:0,y:HEIGHT/4,width:WIDTH,height:HEIGHT/3*2)
         //为了让内容横向滚动，设置横向内容宽度为3个页面的宽度总和
-        scrollView.contentSize=CGSize(width:pageWidth*numOfPages,height:0)
+        scrollView.contentSize=CGSize(width:Double(pageWidth)*Double(numOfPages),height:0)
         scrollView.isPagingEnabled = true
         scrollView.showsHorizontalScrollIndicator = false
         scrollView.showsVerticalScrollIndicator = false
         scrollView.scrollsToTop = false
 
         //添加第二个视图目标
-        let goalview2 = UIView()
-        goalview2.frame = CGRect(x:450,y:60,width:271,height:380)
+//        let goalview2 = UIView()
+//        //goalview2.frame = CGRect(x:450,y:60,width:271,height:380)
+//
+//        //背景图
+//        let imageview = UIImageView()
+//        imageview.frame = CGRect(x:0,y:0,width:271,height:380)
+//        imageview.image = UIImage(named:"center")!
+//        goalview2.addSubview(imageview)
 
-        //背景图
-        let imageview = UIImageView()
-        imageview.frame = CGRect(x:0,y:0,width:271,height:380)
-        imageview.image = UIImage(named:"center")!
-        goalview2.addSubview(imageview)
+        //scrollView.addSubview(goalview2)
 
-
-        scrollView.addSubview(goalview2)
         //添加第三个视图目标
-        let goalview3 = UIView()
-        goalview3.frame = CGRect(x:450+375,y:60,width:271,height:380)
-        goalview3.backgroundColor = UIColor(patternImage: UIImage(named:"center")!)
-        scrollView.addSubview(goalview3)
+//        let goalview3 = UIView()
+//        //goalview3.frame = CGRect(x:450+375,y:60,width:271,height:380)
+//        //背景图
+//        let imageview3 = UIImageView()
+//        imageview3.frame = CGRect(x:0,y:0,width:271,height:380)
+//        imageview3.image = UIImage(named:"center")!
+//        goalview3.addSubview(imageview3)
+
+
         //添加子页面
         for i in 0..<numOfPages{
             if(i == 0){
                 scrollView.addSubview(goalView)
             }
-            if(i == 1){
-                scrollView.addSubview(goalview2)
+            else{
+                let j = i - 1
+                createGoalView(num: Double(j))
+                scrollView.addSubview(goalview3)
             }
-            print("%d",i)
-
         }
         self.view.addSubview(scrollView)
     }
 
-    /*
-    // MARK: - Navigation
+    //创建一个目标view
+    func createGoalView(num:Double)  {
+        goalview3.frame = CGRect(x: Double(WIDTH) + Double(1*num)+65,y:60,width:271,height:380)
+        //背景图
+        let imageview = UIImageView()
+        imageview.frame = CGRect(x:0,y:0,width:271,height:380)
+        imageview.image = UIImage(named:"center")!
+        goalview3.addSubview(imageview)
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        //设置一些别的输入框和标题
+        let lbltitle = UILabel()
+        lbltitle.frame = CGRect(x:goalview3.frame.size.width/2-50,y:14,width:100,height:30)
+        lbltitle.textAlignment = NSTextAlignment(rawValue: 1)!
+        lbltitle.text = "目标一"
+        lbltitle.textColor = UIColor.white
+        lbltitle.font = UIFont(name:"目标一",size:30)
+        goalview3.addSubview(lbltitle)
+
+        let lblname = UILabel()
+        lblname.frame = CGRect(x:goalview3.frame.size.width/2-30,y:60,width:150,height:20)
+        lblname.text = "美丽计划"
+        goalview3.addSubview(lblname)
+
+        let lblstarttime = UILabel()
+        lblstarttime.frame = CGRect(x:goalview3.frame.size.width/2-30,y:87,width:150,height:20)
+        lblstarttime.text = "2015-10-10"
+        goalview3.addSubview(lblstarttime)
+
+        let lblfinishtime = UILabel()
+        lblfinishtime.frame = CGRect(x:goalview3.frame.size.width/2-30,y:117,width:150,height:20)
+        lblfinishtime.text = "2016-10-10"
+        goalview3.addSubview(lblfinishtime)
+
+        let lblaccount = UILabel()
+        lblaccount.frame = CGRect(x:goalview3.frame.size.width/2-30,y:145,width:150,height:20)
+        lblaccount.text = "100万"
+        goalview3.addSubview(lblaccount)
+
+        let image1 = UIImageView()
+        image1.frame = CGRect(x:15,y:210,width:goalview3.frame.size.width/3-20,height:40)
+        image1.backgroundColor = UIColor.blue
+        goalview3.addSubview(image1)
+
+        let image2 = UIImageView()
+        image2.frame = CGRect(x:goalview3.frame.size.width/3+10,y:210,width:goalview3.frame.size.width/3-20,height:40)
+        image2.backgroundColor = UIColor.blue
+        goalview3.addSubview(image2)
+
+        let image3 = UIImageView()
+        image3.frame = CGRect(x:goalview3.frame.size.width/3*2+10,y:210,width:goalview3.frame.size.width/3-20,height:40)
+        image3.backgroundColor = UIColor.blue
+        goalview3.addSubview(image3)
+
+
     }
-    */
-
 }
