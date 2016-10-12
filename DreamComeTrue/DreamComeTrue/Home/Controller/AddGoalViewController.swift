@@ -93,7 +93,8 @@ class AddGoalViewController: UIViewController,UIImagePickerControllerDelegate,UI
             for p in (searchResults as! [NSManagedObject]){
                 print("name:  \(p.value(forKey: "name")!) starttime: \(p.value(forKey: "starttime")!)")
             }
-        } catch  {
+        } catch
+        {
             print(error)
         }
     }
