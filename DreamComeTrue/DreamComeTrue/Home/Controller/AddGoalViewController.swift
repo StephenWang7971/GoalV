@@ -154,6 +154,7 @@ class AddGoalViewController: UIViewController,UIImagePickerControllerDelegate,UI
         }else{
             print("读取相册错误")
         }
+
     }
     //选择图片成功后代理
     func imagePickerController(picker: UIImagePickerController,
@@ -180,15 +181,17 @@ class AddGoalViewController: UIViewController,UIImagePickerControllerDelegate,UI
 //                    print("Success: \(response.result.isSuccess)")
 //                    print("Response String: \(response.result.value)")
 //            }
-//            Alamofire.upload(imageNSURL, to: "", method: .post, headers: nil).responseString { response in
-//                                    print("Success: \(response.result.isSuccess)")
-//                                    print("Response String: \(response.result.value)")
-//                            }
-//
+            Alamofire.upload(imageNSURL, to: "http://www.hangge.com/upload.php", method: .POST, headers: nil){ response in
+                                    print("Success: \(response.result.isSuccess)")
+                                    print("Response String: \(response.result.value)")
+                            }
+
         }
 
         //图片控制器退出
         picker.dismiss(animated: true, completion:nil)
+        
+
     }
 
 }
