@@ -3,79 +3,50 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="39" id="KGk-i7-Jjw" customClass="CheckTableViewCell" customModule="DreamComeTrue" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="349" height="38"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="44" id="KGk-i7-Jjw" customClass="CheckTableViewCell" customModule="DreamComeTrue" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="332" height="44"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <frame key="frameInset" width="349" height="37"/>
+                <frame key="frameInset" width="332" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hqh-SX-BcD">
-                        <frame key="frameInset" width="76" height="15"/>
-                        <color key="backgroundColor" red="1" green="0.093775098160000001" blue="0.063415728960000001" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="76" id="Ubo-6U-Jy2"/>
-                        </constraints>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBh-S2-CJz">
+                        <frame key="frameInset" width="105" height="43"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="1" green="0.062909023209999998" blue="0.14108651119999999" alpha="1" colorSpace="calibratedRGB"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
+                        <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yNt-Hs-o0O">
-                        <frame key="frameInset" minY="15" width="76" height="20.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UsQ-do-BSS">
+                        <frame key="frameInset" minX="227" minY="-1" maxY="1"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.2855391243" green="1" blue="0.35154379499999999" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="tintColor" red="0.2855391243" green="1" blue="0.35154379499999999" alpha="1" colorSpace="calibratedRGB"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="key-AX-uGD">
-                        <color key="backgroundColor" red="1" green="0.093775098160000001" blue="0.063415728960000001" alpha="1" colorSpace="calibratedRGB"/>
-                        <accessibility key="accessibilityConfiguration" identifier="cell"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="94" id="Ip6-Vf-BPu"/>
-                        </constraints>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="vghvghjgbv" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MB0-Ht-zKc">
+                        <frame key="frameInset" minX="122" minY="-1" width="83" maxY="1"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.2855391243" green="1" blue="0.35154379499999999" alpha="1" colorSpace="calibratedRGB"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l2a-XY-Qm4">
-                        <color key="backgroundColor" red="0.95686274510000002" green="0.96078431369999995" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="tintColor" red="0.95686274510000002" green="0.96078431369999995" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="77" id="xTU-hm-UqL"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                        <nil key="textColor"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
-                <constraints>
-                    <constraint firstItem="Hqh-SX-BcD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Lj8-SP-I0E"/>
-                    <constraint firstItem="Hqh-SX-BcD" firstAttribute="trailing" secondItem="yNt-Hs-o0O" secondAttribute="trailing" id="O9z-gX-UPh"/>
-                    <constraint firstItem="l2a-XY-Qm4" firstAttribute="leading" secondItem="yNt-Hs-o0O" secondAttribute="trailing" constant="20" id="Ocb-wl-p4a"/>
-                    <constraint firstAttribute="trailing" secondItem="key-AX-uGD" secondAttribute="trailing" constant="5" id="cQ8-Fn-KEK"/>
-                    <constraint firstItem="Hqh-SX-BcD" firstAttribute="leading" secondItem="yNt-Hs-o0O" secondAttribute="leading" id="dRo-3g-s7D"/>
-                    <constraint firstItem="key-AX-uGD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="ux8-Ub-2s3"/>
-                    <constraint firstItem="l2a-XY-Qm4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="w9B-b5-h2q"/>
-                    <constraint firstAttribute="bottom" secondItem="key-AX-uGD" secondAttribute="bottom" constant="5" id="wCa-wg-wcA"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="yNt-Hs-o0O" secondAttribute="bottom" constant="-6" id="wjh-SL-hJ3"/>
-                    <constraint firstItem="Hqh-SX-BcD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="zM5-8t-rts"/>
-                    <constraint firstItem="yNt-Hs-o0O" firstAttribute="top" secondItem="Hqh-SX-BcD" secondAttribute="bottom" id="zQM-Br-aCs"/>
-                </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="DateLabel" destination="Hqh-SX-BcD" id="fwP-zI-3Iy"/>
-                <outlet property="GoalLabel" destination="l2a-XY-Qm4" id="pXt-7O-8Ez"/>
-                <outlet property="MoneyLabel" destination="key-AX-uGD" id="NcB-j9-ree"/>
-                <outlet property="TimeLabel" destination="yNt-Hs-o0O" id="deD-Gh-gyL"/>
+                <outlet property="DateLabel" destination="LBh-S2-CJz" id="eL6-l2-7yM"/>
+                <outlet property="GoalLabel" destination="MB0-Ht-zKc" id="6N3-XR-qZ9"/>
+                <outlet property="MoneyLabel" destination="UsQ-do-BSS" id="SQd-H4-pwc"/>
             </connections>
-            <point key="canvasLocation" x="497.5" y="-478"/>
+            <point key="canvasLocation" x="-54" y="-575"/>
         </tableViewCell>
     </objects>
 </document>
