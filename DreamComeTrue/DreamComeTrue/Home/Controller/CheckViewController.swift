@@ -13,16 +13,17 @@ class CheckViewController: UIViewController,UITableViewDelegate,UITableViewDataS
 {
     var tableView : UITableView?
     var items :NSMutableArray?
-    var account:String?
+    var  account = ""
     var age:String?
     var finishtime:String?
     var starttime:String?
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
         self.title = "储蓄历史"
         self.navigationController?.navigationBar.titleTextAttributes =  [NSForegroundColorAttributeName: UIColor.white]
-
+        self.items = NSMutableArray()
         getPerson()
         setupTableView()
     }
@@ -32,13 +33,12 @@ class CheckViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         self.tableView!.delegate = self
         self.tableView!.dataSource = self
         self.tableView?.register(UINib(nibName: "CheckTableViewCell", bundle: nil), forCellReuseIdentifier:"cell")
-        
         self.view?.addSubview(self.tableView!)
     }
-    // tableView 的代理方法
+    //tableView的代理方法
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return 10
+         return self.items!.count
     }
     func getContext () -> NSManagedObjectContext
     {
@@ -55,32 +55,46 @@ class CheckViewController: UIViewController,UITableViewDelegate,UITableViewDataS
 
         }
         showCell = self.tableView?.dequeueReusableCell(withIdentifier: "cell")as?CheckTableViewCell
-        showCell.DateLabel.text = "11111111111"
-        showCell.TimeLabel.text = self.starttime
+        showCell.DateLabel.text = self.starttime
+        //let selfaccount = String(describing: Int (self.account!))
+       // print("------ \(String(describing: Int(self.account!)))")
+     //   print("HELLO OF \(selfaccount)")
+        showCell.TimeLabel.text = self.account
+       //showCell.TimeLabel.text = "111111"
         showCell.GoalLabel.text = self.finishtime
         showCell.MoneyLabel.text = self.age
-
         return showCell
-       
-    }
+       }
        //获取 coreDate  存储的数据
-    func getPerson(){
+    func getPerson()
+    {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Goal")
         do {
             let searchResults = try getContext().fetch(fetchRequest)
             print("numbers of \(searchResults.count)")
-            
+            self.items?.addObjects(from:searchResults)
+              print(" \(self.items?.count)")
             for p in (searchResults as! [NSManagedObject])
             {
                 print("account:  \(p.value(forKey: "account")!) finishtime: \(p.value(forKey: "finishtime")!)name:  \(p.value(forKey: "name")!) starttime: \(p.value(forKey: "starttime")!)")
               
-                self.account = "\(p.value(forKey:"account"))"
-                self.finishtime = "\(p.value(forKey:"finishtime"))"
-                self.age = "\(p.value(forKey:"name"))"
-                self.starttime = "\(p.value(forKey:"starttime"))"
+                //self.account = p.value(forKey:"account")! as! String
+                print(self.account)
+                print(p.value(forKey:"account")!)
                 
+                let   myTest = p.value(forKey:"account")!
+                print(myTest)
+                self.account = myTest as! String
+
                 
-                
+                print(self.account)
+                //self.account = p.value(forKey:"account") as!String?
+//                print(String(p.value(forKey:"account")),
+////                String(String(self.account!))
+////                print("---------------\((self.account!))")
+//                self.finishtime = "\(p.value(forKey:"finishtime"))"
+//                self.age = "\(p.value(forKey:"name"))"
+//                self.starttime = "\(p.value(forKey:"starttime"))"
             }
         } catch
         {
