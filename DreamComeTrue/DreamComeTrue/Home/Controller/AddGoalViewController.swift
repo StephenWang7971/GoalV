@@ -38,6 +38,7 @@ class AddGoalViewController: UIViewController,UIImagePickerControllerDelegate,UI
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         self.title = "创建目标"
         //添加一个事件
         btnCreateGoal.addTarget(self, action: #selector(StartCreateGoal(_:)) ,for:.touchUpInside)
@@ -135,10 +136,6 @@ class AddGoalViewController: UIViewController,UIImagePickerControllerDelegate,UI
     //调用相册方法
 
     func photo(){
-//        let pick:UIImagePickerController = UIImagePickerController()
-//        pick.delegate = self
-//        pick.sourceType = UIImagePickerControllerSourceType.photoLibrary
-//        self.present(pick, animated: true, completion: nil)
         //判断设置是否支持图片库
         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary){
             //初始化图片控制器
@@ -190,8 +187,6 @@ class AddGoalViewController: UIViewController,UIImagePickerControllerDelegate,UI
 
         //图片控制器退出
         picker.dismiss(animated: true, completion:nil)
-        
-
     }
 
 }
