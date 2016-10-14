@@ -69,14 +69,11 @@ class AddGoalViewController: UIViewController,UIImagePickerControllerDelegate,UI
         let context = getContext()
         // 定义一个entity，这个entity一定要在xcdatamodeld中做好定义
         let entity = NSEntityDescription.entity(forEntityName: "Goal", in: context)
-
         let goal = NSManagedObject(entity: entity!, insertInto: context)
-
         goal.setValue(name, forKey: "name")
         goal.setValue(starttime, forKey: "starttime")
         goal.setValue(finishtime, forKey: "finishtime")
         goal.setValue(account, forKey: "account")
-
         do {
             try context.save()
             print("saved")
@@ -90,7 +87,6 @@ class AddGoalViewController: UIViewController,UIImagePickerControllerDelegate,UI
         do {
             let searchResults = try getContext().fetch(fetchRequest)
             print("numbers of \(searchResults.count)")
-
             for p in (searchResults as! [NSManagedObject]){
                 print("name:  \(p.value(forKey: "name")!) starttime: \(p.value(forKey: "starttime")!)")
             }
@@ -120,7 +116,6 @@ class AddGoalViewController: UIViewController,UIImagePickerControllerDelegate,UI
         let choseAction = UIAlertAction(title: "从手机相册选择", style: UIAlertActionStyle.default){ (action:UIAlertAction)in
             self.photo()
         }
-
         alert.addAction(cleanAction)
         alert.addAction(photoAction)
         alert.addAction(choseAction)
@@ -158,7 +153,6 @@ class AddGoalViewController: UIViewController,UIImagePickerControllerDelegate,UI
                                didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         //获取选择的原图
         let pickedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
-
         //将选择的图片保存到Document目录下
         let fileManager = FileManager.default
         let rootPath = NSSearchPathForDirectoriesInDomains(.documentDirectory,
@@ -166,7 +160,6 @@ class AddGoalViewController: UIViewController,UIImagePickerControllerDelegate,UI
         let filePath = "\(rootPath)/pickedimage.jpg"
         let imageData = UIImageJPEGRepresentation(pickedImage, 1.0)
         fileManager.createFile(atPath: filePath, contents: imageData, attributes: nil)
-
         //上传图片
         if (fileManager.fileExists(atPath: filePath)){
             //取得NSURL
@@ -184,7 +177,6 @@ class AddGoalViewController: UIViewController,UIImagePickerControllerDelegate,UI
 //                            }
 
         }
-
         //图片控制器退出
         picker.dismiss(animated: true, completion:nil)
     }
