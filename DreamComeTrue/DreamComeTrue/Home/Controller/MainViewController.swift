@@ -44,6 +44,7 @@ class MainViewController: UIViewController,UIScrollViewDelegate {
         //如果不为零，显示目标一
         createScrollerView()
         setupRightBarButtonItem()
+
        
 
     }
