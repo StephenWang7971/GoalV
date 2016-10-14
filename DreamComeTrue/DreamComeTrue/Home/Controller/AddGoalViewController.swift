@@ -181,10 +181,10 @@ class AddGoalViewController: UIViewController,UIImagePickerControllerDelegate,UI
 //                    print("Success: \(response.result.isSuccess)")
 //                    print("Response String: \(response.result.value)")
 //            }
-            Alamofire.upload(imageNSURL, to: "http://www.hangge.com/upload.php", method: .POST, headers: nil){ response in
-                                    print("Success: \(response.result.isSuccess)")
-                                    print("Response String: \(response.result.value)")
-                            }
+//            Alamofire.upload(imageNSURL, to: "http://www.hangge.com/upload.php", method: .POST, headers: nil){ response in
+//                                    print("Success: \(response.result.isSuccess)")
+//                                    print("Response String: \(response.result.value)")
+//                            }
 
         }
 
