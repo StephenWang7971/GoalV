@@ -8,9 +8,11 @@
 
 import UIKit
 import CoreData
+
 class CheckViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
 
 {
+    //MARK: - 属性
     var tableView : UITableView?
     var items :NSMutableArray?
     //var ageAry :NSMutableArray?
@@ -23,6 +25,8 @@ class CheckViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     var finishtime:AnyObject!
     var starttime :AnyObject!
     var  number: AnyObject!
+    
+    //MARK: - 系统方法
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -53,24 +57,40 @@ class CheckViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
       //var showCell: CheckTableViewCell! = self.tableView!.dequeueReusableCell(withIdentifier: "cell", forIndexPath:indexPath) as? CheckTableViewCell
-       var showCell: CheckTableViewCell!  = self.tableView!.dequeueReusableCell(withIdentifier: "cell", for: indexPath)as?CheckTableViewCell
+//       var showCell: CheckTableViewCell!  = self.tableView!.dequeueReusableCell(withIdentifier: "cell", for: indexPath)as?CheckTableViewCell
+//        
+//        if showCell == nil
+//        {
+//            showCell = CheckTableViewCell()
+//
+//        }
+////        showCell = self.tableView?.dequeueReusableCell(withIdentifier: "cell")as?CheckTableViewCell
+//        let myData = SaveDataBase()
+//        myData.Maccount = self.accountAry[indexPath.row] as? String
+//        print("HEll0----",self.accountAry.count)
+//        showCell.MoneyLabel.text = "11111111"
+//        //print(self.starttime)
+//        //    
+//       showCell.GoalLabel.text = self.age as! String?
+//        showCell.MoneyLabel.text = self.finishtime as! String?
+//        return showCell
         
-        if showCell == nil
-        {
-            showCell = self.tableView!.dequeueReusableCell(withIdentifier: "cell") as? CheckTableViewCell
-
+        let cellId = "cell"
+        var showCell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as? CheckTableViewCell
+        if showCell == nil {
+            showCell = CheckTableViewCell()
         }
-        showCell = self.tableView?.dequeueReusableCell(withIdentifier: "cell")as?CheckTableViewCell
-        let myData = SaveDataBase()
-        myData.Maccount = self.accountAry[indexPath.row] as? String
-        print("HEll0----",self.accountAry.count)
-        showCell.MoneyLabel.text = "11111111"
-
-//        print(self.starttime)
-//    
-       showCell.GoalLabel.text = self.age as! String?
-        showCell.MoneyLabel.text = self.finishtime as! String?
-        return showCell
+        
+        let money = self.starttimeAry[indexPath.row] as? String
+        let date = self.finishtimeAry[indexPath.row] as? String
+        let goal = self.accountAry[indexPath.row] as? String
+        
+        showCell?.MoneyLabel.text = money
+        showCell?.DateLabel.text = date
+        showCell?.GoalLabel.text = goal
+        
+        return showCell!
+        
        }
        //获取 coreDate  存储的数据
     func getPerson()
